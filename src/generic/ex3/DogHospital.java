@@ -25,7 +25,7 @@ public class DogHospital {
      * @param target 비교할 개
      * @return 사이즈 큰 개 인스턴스를 반환
      */
-    public Dog bigger(Dog target) {
+    public Dog getBigger(Dog target) {
         return animal.getSize() > target.getSize() ? animal : target; // 삼항연산자 사용
     }
 }

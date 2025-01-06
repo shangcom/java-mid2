@@ -25,7 +25,7 @@ public class CatHospital {
      * @param target 비교할 고양이
      * @return 사이즈 큰 고양이 인스턴스를 반환
      */
-    public Cat bigger(Cat target) {
+    public Cat getBigger(Cat target) {
         return animal.getSize() > target.getSize() ? animal : target; // 삼항연산자 사용
     }
 }
