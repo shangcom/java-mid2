@@ -2,6 +2,10 @@ package generic.ex5;
 
 import generic.animal.Animal;
 
+/*
+제한된 와일드카드 - 상한
+<? extends Type>
+ */
 public class WildcardEx {
 
     //제네릭 메서드
