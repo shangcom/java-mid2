@@ -2,6 +2,11 @@ package collection.array;
 
 import java.util.Arrays;
 
+/*
+문제점
+배열 크기 변경 불가.
+size가 capacity 벗어나면 ArrayIndexOutOfBoundsException 예외 발생.
+ */
 public class MyArrayListV1 {
 
     private static final int DEFAULT_CAPACITY = 5;
