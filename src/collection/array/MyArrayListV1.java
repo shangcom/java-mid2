@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /*
 문제점
-배열 크기 변경 불가.
+동적으로 저장 크기가 커지지 않는다.
 size가 capacity 벗어나면 ArrayIndexOutOfBoundsException 예외 발생.
  */
 public class MyArrayListV1 {
@@ -80,7 +80,7 @@ public class MyArrayListV1 {
     }
 
     /*
-    배열의 크기가 size보다 size 이후부터는 배열이 비어있다.
+    배열의 크기가 size보다 크면, size 이후부터는 배열이 비어있다.
     elementData의 실제 데이터를 출력하기 위해 Arrays.copyOf()로 size만큼 elementData를 복사한 배열을 만들고,
     Arrays.toString()으로 그 배열을 출력한다.
      */
