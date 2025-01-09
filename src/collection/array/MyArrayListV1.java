@@ -11,6 +11,7 @@ public class MyArrayListV1 {
 
     private static final int DEFAULT_CAPACITY = 5;
 
+    // private로 직접 접근 막음.
     private Object[] elementData;
 
     private int size = 0; // element에서 실제 채워진 인덱스의 수
