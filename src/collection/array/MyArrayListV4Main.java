@@ -1,5 +1,7 @@
 package collection.array;
 
+import java.util.ArrayList;
+
 /*
 제네릭 도입
 타입 안정성 O
@@ -17,7 +19,8 @@ public class MyArrayListV4Main {
         String s0 = stringList.get(0);
         System.out.println("s0 = " + s0);
 
-
+        ArrayList<String> strings = new ArrayList<String>();
+        strings.add(2,"a");
         MyArrayListV4<Integer> integerList = new MyArrayListV4<>();
         integerList.add(1);
         integerList.add(2);
