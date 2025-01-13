@@ -50,7 +50,7 @@ public class NodeMain3 {
     반복문이 종료되면 x는 반드시 마지막 노드를 가리키게 된다.
     next가 null이 됐을 때 반복문을 정지하고 x를 반환하면 된다.
      */
-    private static Node getLastNode(Node node) {
+    public static Node getLastNode(Node node) {
         Node x = node;
         while (x.next != null) {
             x = x.next;
@@ -61,7 +61,7 @@ public class NodeMain3 {
     /*
      특정 인덱스의 노드 반환하는 메서드
      */
-    private static Node getNode(Node node, int index) {
+    public static Node getNode(Node node, int index) {
         Node x = node;
         for (int i = 0; i < index; i++) {
             x = x.next;
@@ -73,7 +73,7 @@ public class NodeMain3 {
     LinkedList에 자료를 추가하는 메서드
     현재의 맨 마지막 노드의 next 필드를 새로운 노드로 초기화하고, 이 새로운 노드의 item 필드를 원하는 자료로 초기화한다.
      */
-    private static void add(Node node, String param) {
+    public static void add(Node node, String param) {
         Node lastNode = getLastNode(node);
         lastNode.next = new Node(param);
     }
